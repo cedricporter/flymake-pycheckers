@@ -24,9 +24,12 @@ from __future__ import print_function
 # One or more of pydo, pep8 or pyflakes, separated by commas
 DEFAULT_CHECKERS = 'pep8, pyflakes, pylint'
 # A list of error codes to ignore.
-DEFAULT_IGNORE_CODES = []
-# E501 = line to long
-#DEFAULT_IGNORE_CODES.append('E501')
+DEFAULT_IGNORE_CODES = [
+    'E501',  # line too long
+    'E125',  # E125:continuation line with same indent as next logical line
+    'E121',  # E121:continuation line under-indented for hanging indent
+    'E402',  # WARNING E402:module level import not at top of file
+]
 
 ## End of customization ##
 
